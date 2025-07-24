@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTIS rooms (
+    "id"    uuid    PRIMARY KEY NOT NULL DEFAULT gen_random_uuid(),
+    "theme" VARCHAR(255)        NOT NULL,
+);
+
+---- create above / drop below ----
+
+DROP TABLE IF EXISTS messages;
+
+-- OBS: PARA CRIAR AS MIGRATIONS, EU PRECISO PRIMEIRO DEFINIR AONDE ESSAS MIGRATIONS SERÃO CRIADAS
